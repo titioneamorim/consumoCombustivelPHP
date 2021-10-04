@@ -28,6 +28,7 @@ if($_POST) {
 				$mensagem.= "O valor total gasto será de:";
 				$mensagem.= "<ul>";
 				$mensagem.= "<li><b>Gasolina:</b> R$ ".$consumoGasolina."</li>";
+				$mensagem.= "Ao custo de ".$valorComb." o litro";
 				$mensagem.= "</ul>";
 				$mensagem.= "</div>";
 
@@ -41,6 +42,7 @@ if($_POST) {
 				$mensagem.= "O valor total gasto será de:";
 				$mensagem.= "<ul>";
 				$mensagem.= "<li><b>Álcool:</b> R$ ".$consumoAlcool."</li>";
+				$mensagem.= "Ao custo de ".$valorComb." o litro";
 				$mensagem.= "</ul>";
 				$mensagem.= "</div>";
 			}
@@ -53,6 +55,7 @@ if($_POST) {
 				$mensagem.= "O valor total gasto será de:";
 				$mensagem.= "<ul>";
 				$mensagem.= "<li><b>Diesel</b>: R$ ".$consumoDiesel."</li>";
+				$mensagem.= "Ao custo de ".$valorComb." o litro";
 				$mensagem.= "</ul>";
 				$mensagem.= "</div>";
 			}
