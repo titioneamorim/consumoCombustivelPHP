@@ -5,9 +5,9 @@ if($_POST) {
 	$distancia = $_POST['distancia'];
 	$autonomia = $_POST['autonomia'];
 
-	$valorGasolina = 4.80;
-	$valorAlcool = 3.80;
-	$valorDiesel = 3.90;
+	$valorGasolina = 5.49;
+	$valorAlcool = 5.09;
+	$valorDiesel = 4.90;
 
 	$mensagem = ""; 
 
