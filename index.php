@@ -34,6 +34,7 @@
 						<option value="d">Diesel</option>
 					</select>
 					<br>
+					<br>
 					<label for="distancia">Distância em Km a ser percorrida</label>
 					<input type="number" class="campoTexto"  name="distancia" required/>
 
