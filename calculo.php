@@ -4,33 +4,59 @@ if($_POST) {
 
 	$distancia = $_POST['distancia'];
 	$autonomia = $_POST['autonomia'];
+	$comb = $_POST['combustivel'];
 
-	$valorGasolina = 5.49;
-	$valorAlcool = 5.09;
-	$valorDiesel = 4.90;
-
+	$valorComb = "";
 	$mensagem = ""; 
 
+	
+		
+	} 
+
+
+
+	if (($comb != "" && ($comb != "Selecione o combustível"))){
 	if (is_numeric($autonomia) && is_numeric($distancia)){
 		if (($distancia > 0) && ($autonomia > 0)) {
 
-			$consumoGasolina = ($distancia / $autonomia ) * $valorGasolina;
-			$consumoGasolina = number_format($consumoGasolina,2,',','.');
+			if($comb == "g"){
+				$valorComb = 5.49;
+				$consumoGasolina = ($distancia / $autonomia ) * $valorComb;
+				$consumoGasolina = number_format($consumoGasolina,2,',','.');
 
-			$consumoAlcool = ($distancia / $autonomia ) * $valorAlcool;
-			$consumoAlcool = number_format($consumoAlcool,2,',','.');
+				$mensagem.= "<div class='sucesso'>";
+				$mensagem.= "O valor total gasto será de:";
+				$mensagem.= "<ul>";
+				$mensagem.= "<li><b>Gasolina:</b> R$ ".$consumoGasolina."</li>";
+				$mensagem.= "</ul>";
+				$mensagem.= "</div>";
 
-			$consumoDiesel = ($distancia / $autonomia ) * $valorDiesel;
-			$consumoDiesel = number_format($consumoDiesel,2,',','.');
-
-			$mensagem.= "<div class='sucesso'>";
-			$mensagem.= "O valor total gasto será de:";
-			$mensagem.= "<ul>";
-			$mensagem.= "<li><b>Gasolina:</b> R$ ".$consumoGasolina."</li>";
-			$mensagem.= "<li><b>Álcool:</b> R$ ".$consumoAlcool."</li>";
-			$mensagem.= "<li><b>Diesel</b>: R$ ".$consumoDiesel."</li>";
-			$mensagem.= "</ul>";
-			$mensagem.= "</div>";
+			} 
+			if($comb == "a"){
+				$valorComb = 5.09;
+				$consumoAlcool = ($distancia / $autonomia ) * $valorComb;
+				$consumoAlcool = number_format($consumoAlcool,2,',','.');
+				
+				$mensagem.= "<div class='sucesso'>";
+				$mensagem.= "O valor total gasto será de:";
+				$mensagem.= "<ul>";
+				$mensagem.= "<li><b>Álcool:</b> R$ ".$consumoAlcool."</li>";
+				$mensagem.= "</ul>";
+				$mensagem.= "</div>";
+			}
+			if($comb == "d"){
+				$valorComb = 4.90;
+				$consumoDiesel = ($distancia / $autonomia ) * $valorComb;
+				$consumoDiesel = number_format($consumoDiesel,2,',','.');
+	
+				$mensagem.= "<div class='sucesso'>";
+				$mensagem.= "O valor total gasto será de:";
+				$mensagem.= "<ul>";
+				$mensagem.= "<li><b>Diesel</b>: R$ ".$consumoDiesel."</li>";
+				$mensagem.= "</ul>";
+				$mensagem.= "</div>";
+			}
+			
 		} else {
 			$mensagem.= "<div class='erro'>";
 			$mensagem.= "<b>O valor da distância e da autonomia deve ser maior que zero.</b>";
@@ -42,12 +68,13 @@ if($_POST) {
 		$mensagem.= "</div>";
 	}
 } else {
-	$mensagem = "<div class='erro'>";
-	$mensagem.= "<b>Nenhum dado foi recebido pelo formulário</b>";
-	$mensagem.= "</div>";
+	$mensagem.= "<div class='erro'>";
+		$mensagem.= "<b>O tipo de combustível deve ser selecionado.</b>";
+		$mensagem.= "</div>";
 }
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
