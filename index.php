@@ -36,7 +36,7 @@
 					<br>
 					<br>
 					<label for="valor">Valor do combustivel</label>
-					<input type="number" class="campoTexto"  name="valor" required/>
+					<input type="number" class="campoTexto"  name="valor" step=".01" required/>
 
 					<label for="distancia">Distância em Km a ser percorrida</label>
 					<input type="number" class="campoTexto"  name="distancia" required/>
