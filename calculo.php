@@ -7,7 +7,7 @@ if($_POST) {
 	$comb = $_POST['combustivel'];
 	$valorComb = $_POST['valor'];
 
-	$valorComb = "";
+	
 	$mensagem = ""; 
 
 	
