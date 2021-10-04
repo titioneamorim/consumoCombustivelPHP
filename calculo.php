@@ -66,7 +66,7 @@ if($_POST) {
 			
 		} else {
 			$mensagem.= "<div class='erro'>";
-			$mensagem.= "<b>O valor da distância e da autonomia deve ser maior que zero.</b>";
+			$mensagem.= "<b>O valor do combustível, da distância e da autonomia deve ser maior que zero.</b>";
 			$mensagem.= "</div>";
 		}
 	} else {
