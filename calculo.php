@@ -5,6 +5,7 @@ if($_POST) {
 	$distancia = $_POST['distancia'];
 	$autonomia = $_POST['autonomia'];
 	$comb = $_POST['combustivel'];
+	$valorComb = $_POST['valor'];
 
 	$valorComb = "";
 	$mensagem = ""; 
@@ -17,10 +18,10 @@ if($_POST) {
 
 	if (($comb != "" && ($comb != "Selecione o combustível"))){
 	if (is_numeric($autonomia) && is_numeric($distancia)){
-		if (($distancia > 0) && ($autonomia > 0)) {
+		if (($distancia > 0) && ($autonomia > 0) && ($valorComb > 0)) {
 
 			if($comb == "g"){
-				$valorComb = 5.49;
+				
 				$consumoGasolina = ($distancia / $autonomia ) * $valorComb;
 				$consumoGasolina = number_format($consumoGasolina,2,',','.');
 
@@ -35,7 +36,7 @@ if($_POST) {
 
 			} 
 			if($comb == "a"){
-				$valorComb = 5.09;
+				
 				$consumoAlcool = ($distancia / $autonomia ) * $valorComb;
 				$consumoAlcool = number_format($consumoAlcool,2,',','.');
 				
@@ -49,7 +50,7 @@ if($_POST) {
 				$mensagem.= "</div>";
 			}
 			if($comb == "d"){
-				$valorComb = 4.90;
+				
 				$consumoDiesel = ($distancia / $autonomia ) * $valorComb;
 				$consumoDiesel = number_format($consumoDiesel,2,',','.');
 	
