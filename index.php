@@ -17,8 +17,8 @@
 				<p>Os combustíveis que serão demonstrados aqui são:</p>
 				<ul>
 					<li><b>Álcool</b> preço por litro 5,49 (apenas para base de cálculo)</li>
-					<li><b>Díesel</b>preço por litro 5,09 (apenas para base de cálculo)</li>
-					<li><b>Gasolina</b>preço por litro 4,90 (apenas para base de cálculo)</li>
+					<li><b>Díesel</b> preço por litro 5,09 (apenas para base de cálculo)</li>
+					<li><b>Gasolina</b> preço por litro 4,90 (apenas para base de cálculo)</li>
 				</ul>
 			</div>
 		</div>
