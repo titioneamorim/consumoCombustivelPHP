@@ -12,8 +12,9 @@
 			<h2>Instruções</h2>
 			<div class="conteudo-painel">
 				<p>Esta aplicação tem como finalidade demonstrar os valores que
-					serão gastos com combustível durante uma viagem, com base no valor do combustivel, tipo dele e 
-					no consumo do seu veículo, e com a distância determinada por você!</p>
+					serão gastos com combustível durante uma viagem, com base no 
+					valor do combustivel, tipo dele, 
+					consumo do seu veículo e com a distância determinada por você!</p>
 				<p>Os combustíveis que serão demonstrados aqui são:</p>
 				<ul>
 					<li><b>Álcool</b> </li>
