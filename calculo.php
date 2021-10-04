@@ -5,24 +5,24 @@ if($_POST) {
 	$distancia = $_POST['distancia'];
 	$autonomia = $_POST['autonomia'];
 	$comb = $_POST['combustivel']
-	$valorComb = "";
-	$mensagem = ""; 
+	// $valorComb = "";
+	// $mensagem = ""; 
 
-	if ($comb != ""){
-		if($comb == "g"){
-			$valorComb = 5.49;
-		} 
-		if($comb == "a"){
-			$valorComb = 5.09;
-		}
-		if($comb == "d"){
-			$valorComb = 4.90;
-		}
-	} else {
-		$mensagem.= "<div class='erro'>";
-			$mensagem.= "<b>O tipo de combustível deve ser selecionado.</b>";
-			$mensagem.= "</div>";
-	}
+	// if ($comb != ""){
+	// 	if($comb == "g"){
+	// 		$valorComb = 5.49;
+	// 	} 
+	// 	if($comb == "a"){
+	// 		$valorComb = 5.09;
+	// 	}
+	// 	if($comb == "d"){
+	// 		$valorComb = 4.90;
+	// 	}
+	// } else {
+	// 	$mensagem.= "<div class='erro'>";
+	// 		$mensagem.= "<b>O tipo de combustível deve ser selecionado.</b>";
+	// 		$mensagem.= "</div>";
+	// }
 
 
 	$valorGasolina = 5.49;
