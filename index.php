@@ -12,13 +12,13 @@
 			<h2>Instruções</h2>
 			<div class="conteudo-painel">
 				<p>Esta aplicação tem como finalidade demonstrar os valores que
-					serão gastos com combustível durante uma viagem, com base no
-				consumo do seu veículo, e com a distância determinada por você!</p>
+					serão gastos com combustível durante uma viagem, com base no valor do combustivel, tipo dele e 
+					no consumo do seu veículo, e com a distância determinada por você!</p>
 				<p>Os combustíveis que serão demonstrados aqui são:</p>
 				<ul>
-					<li><b>Álcool</b> preço por litro 5,49 (apenas para base de cálculo)</li>
-					<li><b>Díesel</b> preço por litro 5,09 (apenas para base de cálculo)</li>
-					<li><b>Gasolina</b> preço por litro 4,90 (apenas para base de cálculo)</li>
+					<li><b>Álcool</b> </li>
+					<li><b>Díesel</b> </li>
+					<li><b>Gasolina</b> </li>
 				</ul>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 					<br>
 					<br>
 					<label for="valor">Valor do combustivel</label>
-					<input type="number" class="campoTexto"  name="valor" step=".01" required/>
+					<input type="number" class="campoTexto"  name="valor" step="any" required/>
 
 					<label for="distancia">Distância em Km a ser percorrida</label>
 					<input type="number" class="campoTexto"  name="distancia" required/>
