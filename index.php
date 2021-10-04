@@ -27,13 +27,13 @@
 			<h2>Cálculo do valor em R$ do consumo do seu veículo</h2>
 			<div class="conteudo-painel">
 				<form action="calculo.php" method="POST">
-				<select id=combustivel>
-    				<option>Selecione o combustível</option>
-    				<option>Gasolina</option>
-    				<option>Alcool</option>
-    				<option>Diesel</option>
-				</select>
-				<br>
+					<select id=combustivel>
+						<option>Selecione o combustível</option>
+						<option value="g">Gasolina</option>
+						<option value="a">Alcool</option>
+						<option value="d">Diesel</option>
+					</select>
+					<br>
 					<label for="distancia">Distância em Km a ser percorrida</label>
 					<input type="number" class="campoTexto"  name="distancia" required/>
 
